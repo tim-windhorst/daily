@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Daily Background Color</title>
+    <script>
+        function changeBackgroundColor() {
+            var colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"];
+            var currentDate = new Date();
+            var day = currentDate.getDate();
+            var colorIndex = day % colors.length;
+            document.body.style.backgroundColor = colors[colorIndex];
+        }
+    </script>
+</head>
+
+<body onload="changeBackgroundColor()">
+    <h1>Daily Background Color</h1>
+    <p>This page changes its background color on a daily basis for testing visual regression testing platforms.</p>
+</body>
+
+</html>
